@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="455dp"
+        android:layout_height="274dp"
+        android:layout_marginBottom="468dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/background_1" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/boton_estrella"
+        android:layout_width="59dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="434dp"
+        android:backgroundTint="#ECA5EF"
+        android:clickable="true"
+        android:contentDescription="star"
+        android:tint="#FFFFFF"
+        app:circularflow_angles="boton_estrella"
+        app:circularflow_defaultRadius="0dp"
+        app:constraint_referenced_ids="boton_estrella"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_star"
+        app:tint="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/mensaje1"
+        android:layout_width="36dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="60dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/mensaje2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/telefono1"
+        app:layout_constraintTop_toBottomOf="@+id/boton_estrella"
+        app:srcCompat="@drawable/ic_sms"
+        app:tint="#137517" />
+
+    <ImageView
+        android:id="@+id/mensaje2"
+        android:layout_width="36dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_sms"
+        app:tint="#137517" />
+
+    <ImageView
+        android:id="@+id/telefono"
+        android:layout_width="49dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="149dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_phone" />
+
+    <TextView
+        android:id="@+id/telefono1"
+        android:layout_width="97dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="55dp"
+        android:text="687100200"
+        app:layout_constraintStart_toEndOf="@+id/telefono"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="169dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:text="alexrodriramiz@gmail.com"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="4dp"
+        android:text="Mail"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <TextView
+        android:id="@+id/telefono2"
+        android:layout_width="97dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="93dp"
+        android:text="699500600"
+        app:layout_constraintBottom_toTopOf="@+id/movil1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/movil1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="201dp"
+        android:layout_marginBottom="64dp"
+        android:text="Movil"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toStartOf="@+id/mensaje2" />
+
+    <TextView
+        android:id="@+id/movil2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="1dp"
+        android:text="Movil"
+        app:layout_constraintStart_toEndOf="@+id/telefono"
+        app:layout_constraintTop_toBottomOf="@+id/telefono1" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="11dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="46dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:srcCompat="@drawable/ic_email" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
